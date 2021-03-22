@@ -1,0 +1,51 @@
+{
+    "name": "firrtl",
+    "displayName": "Firrtl",
+    "description": "Syntax Highlighting and more for Firrtl (Flexible Internal Representation for RTL)",
+    "icon": "images/firrtl.png",
+    "publisher": "kamyar",
+    "version": "0.0.1",
+    "preview": true,
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Programming Languages", "Other"
+    ],
+    "keywords": [
+        "RTL",
+        "HDL",
+        "Hardware",
+        "Internal Representation",
+        "IR",
+        "Highlight",
+        "Chisel"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "firrtl",
+                "aliases": [
+                    "FIRRTL",
+                    "firrtl"
+                ],
+                "extensions": [
+                    "fir"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "firrtl",
+                "scopeName": "source.firrtl",
+                "path": "./syntaxes/firrtl.tmLanguage.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kammoh/vscode-firrtl.git"
+    },
+    "homepage": "https://github.com/kammoh/vscode-firrtl/blob/main/README.md"
+}
